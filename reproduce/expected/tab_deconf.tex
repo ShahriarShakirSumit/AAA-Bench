@@ -1,0 +1,13 @@
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcc}
+\toprule
+Attacker & Unpaired & \bench{} \\
+\midrule
+Majority baseline & 0.440 & 0.500 \\
+Text-only (question) & \textbf{0.983} & \textbf{0.500} \\
+Count-only (instances) & 0.440 & 0.650 \\
+\quad count-matched pairs & --- & 0.582 \\
+Text $+$ count & 0.983 & 0.620 \\
+Paired, same wording & --- & \textbf{0.500} \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use AAA-Bench, please cite the paper."
+title: "AAA-Bench: Counterfactual, Verifier-Grounded Evaluation of Vision-Language Models as Decision-Makers Under Visual Ambiguity"
+authors:
+  - family-names: Sumit
+    given-names: Shahriar Shakir
+  - family-names: Tahtali
+    given-names: Murat
+  - family-names: Mirjalili
+    given-names: Seyedali
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/ShahriarShakirSumit/AAA-Bench"
+preferred-citation:
+  type: conference-paper
+  title: "AAA-Bench: Counterfactual, Verifier-Grounded Evaluation of Vision-Language Models as Decision-Makers Under Visual Ambiguity"
+  authors:
+    - family-names: Sumit
+      given-names: Shahriar Shakir
+    - family-names: Tahtali
+      given-names: Murat
+    - family-names: Mirjalili
+      given-names: Seyedali
+  collection-title: "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  year: 2027

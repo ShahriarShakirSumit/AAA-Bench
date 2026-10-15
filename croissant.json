@@ -1,0 +1,348 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "dct": "http://purl.org/dc/terms/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform",
+    "samplingRate": "cr:samplingRate",
+    "equivalentProperty": "cr:equivalentProperty"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "AAA-Bench",
+  "description": "A benchmark for whether vision-language models decide correctly to answer, ask for clarification or abstain when a COCO image under-specifies a question. Items come in counterfactual pairs that share the question wording but need different actions, and every gold action is derived from COCO instance annotations. 7,400 items in 3,700 pairs over 59 categories; train 4,994, validation 956, test 1,450.",
+  "url": "https://huggingface.co/datasets/Shahriar10/AAA-Bench",
+  "sameAs": "https://github.com/ShahriarShakirSumit/AAA-Bench",
+  "version": "1.0.0",
+  "datePublished": "2026-10-16",
+  "isLiveDataset": false,
+  "inLanguage": "en",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": [
+    {
+      "@type": "sc:Person",
+      "name": "Shahriar Shakir Sumit"
+    },
+    {
+      "@type": "sc:Person",
+      "name": "Murat Tahtali"
+    },
+    {
+      "@type": "sc:Person",
+      "name": "Seyedali Mirjalili"
+    }
+  ],
+  "citeAs": "@inproceedings{sumit2027aaabench, title={{AAA-Bench}: Counterfactual, Verifier-Grounded Evaluation of Vision-Language Models as Decision-Makers Under Visual Ambiguity}, author={Sumit, Shahriar Shakir and Tahtali, Murat and Mirjalili, Seyedali}, booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)}, year={2027}}",
+  "keywords": [
+    "vision-language models",
+    "visual question answering",
+    "ambiguity",
+    "clarification",
+    "abstention",
+    "selective prediction",
+    "counterfactual pairs",
+    "benchmark",
+    "COCO"
+  ],
+  "rai:dataCollection": "Gold actions are derived from COCO 2017 instance annotations with stated rules; questions come from three templates per family. Three annotators from the research team audited the rules on a 400-item sample (Fleiss' kappa 0.833), which led to one rule being changed and one retired.",
+  "rai:dataLimitations": "COCO scenes and object-instance ambiguity only. The direct_answer field is a construction by-product and is not a reference answer. Human agreement with the derived labels is moderate on the boundary between one dominant and several comparable instances and on crowds. One test pair uses the same image twice.",
+  "rai:dataUseCases": "Evaluating and developing answer/ask/abstain decision policies for vision-language models.",
+  "rai:personalSensitiveInformation": "None collected. COCO images can show people; they are not redistributed.",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face git repository.",
+      "contentUrl": "https://huggingface.co/datasets/Shahriar10/AAA-Bench/tree/main",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "jsonl-files",
+      "name": "jsonl-files",
+      "description": "The three splits, one JSON object per line.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/jsonlines",
+      "includes": "data/*.jsonl"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "items",
+      "name": "items",
+      "description": "One AAA-Bench item per record. data/schema.json documents the nested fields (visual_evidence, valid_interpretations, clarifications).",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "items/item_id",
+          "name": "item_id",
+          "description": "Unique item id, e.g. AAAv2-004578.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.item_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/split",
+          "name": "split",
+          "description": "Splits are pair-level and image-disjoint.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.split"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/image_id",
+          "name": "image_id",
+          "description": "COCO 2017 image id.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/image_path",
+          "name": "image_path",
+          "description": "Path of the image inside a COCO 2017 folder, e.g. train2017/000000384993.jpg.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.image_path"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/question",
+          "name": "question",
+          "description": "The question. Both members of a pair have exactly the same question.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.question"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/ambiguity_subtype",
+          "name": "ambiguity_subtype",
+          "description": "Question family.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.ambiguity_subtype"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/coco_category_ids",
+          "name": "coco_category_ids",
+          "description": "The COCO category the question asks about.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.coco_category_ids"
+            }
+          },
+          "repeated": true
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/num_objects_in_scene",
+          "name": "num_objects_in_scene",
+          "description": "Number of COCO instance annotations in the image, over all categories.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.num_objects_in_scene"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/decision_basis",
+          "name": "decision_basis",
+          "description": "The scene configuration that determines the gold action (see aaa_bench/construction.py).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.decision_basis"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/gold_action",
+          "name": "gold_action",
+          "description": "The action the scene licenses.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.gold_action"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/is_ambiguous",
+          "name": "is_ambiguous",
+          "description": "True when gold_action is ask or abstain.",
+          "dataType": "sc:Boolean",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.is_ambiguous"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/ambiguity_type",
+          "name": "ambiguity_type",
+          "description": "referential for ask items, resolution for crowd items, null otherwise (absent-object items included).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.ambiguity_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/difficulty",
+          "name": "difficulty",
+          "description": "Set by the construction: 1 for one clear referent, present, absent and countable items, 2 for one dominant referent, 3 for ask and crowd items. Not a measured difficulty.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.difficulty"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/direct_answer",
+          "name": "direct_answer",
+          "description": "Answer text from the construction, not used by any metric. Spatial answer items: the side of the referent (left, center or right). Countable items: the number of referents, which undercounts when instances are small. Present items: yes. Absent items: no, the answer of the rule the human study replaced. Colour answer items: the placeholder yes, since COCO has no colour labels. Null for ask and crowd items.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.direct_answer"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "items/pair_id",
+          "name": "pair_id",
+          "description": "Id of the counterfactual pair; each pair has exactly two items with different gold actions.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "jsonl-files"
+            },
+            "extract": {
+              "jsonPath": "$.pair_id"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

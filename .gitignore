@@ -1,0 +1,12 @@
+__pycache__/
+*.egg-info/
+.venv/
+.pytest_cache/
+results/
+runs/
+coco/
+data_rebuilt/
+construction/coco_index.json
+construction/items_raw.jsonl
+construction/prestudy/
+human_study/kit/images/

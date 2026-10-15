@@ -1,0 +1,401 @@
+item_id,image,question,options,annot1_ambiguous(yes/no),annot1_action(answer/ask/abstain),annot2_ambiguous(yes/no),annot2_action(answer/ask/abstain),annot3_ambiguous(yes/no),annot3_action(answer/ask/abstain)
+HS-001,000000042008.jpg,Describe the color of the car.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-002,000000441449.jpg,Can you see an orange in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-003,000000368833.jpg,"Which side of the image is the umbrella on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-004,000000353663.jpg,What color is the couch?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-005,000000329946.jpg,Is the kite on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-006,000000351914.jpg,What is the colour of the dog in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-007,000000400202.jpg,Is there a motorcycle in the image?,answer | ask | abstain,yes,abstain,no,answer,no,answer
+HS-008,000000222903.jpg,Describe the color of the donut.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-009,000000389315.jpg,How many books are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-010,000000222440.jpg,Is there an elephant in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-011,000000471096.jpg,On which side of the picture is the elephant?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-012,000000428046.jpg,"Which side of the image is the person on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-013,000000070815.jpg,What color is the bicycle?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-014,000000025230.jpg,Count the cakes in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-015,000000111180.jpg,Can you see a bear in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-016,000000173221.jpg,Is there a bed in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-017,000000371864.jpg,What color is the keyboard?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-018,000000459304.jpg,Can you see a cow in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-019,000000324754.jpg,What color is the bus?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-020,000000173832.jpg,Can you see a mouse in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-021,000000054572.jpg,Is the bear on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-022,000000248919.jpg,Count the apples in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-023,000000302298.jpg,Describe the color of the giraffe.,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-024,000000544408.jpg,Is there an umbrella in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-025,000000350361.jpg,Is there a boat in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-026,000000276671.jpg,Can you see a bicycle in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-027,000000045306.jpg,What is the colour of the elephant in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-028,000000133061.jpg,Is there a cow in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-029,000000099888.jpg,How many cars are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-030,000000102754.jpg,Can you see a cup in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-031,000000131627.jpg,What is the colour of the bus in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-032,000000298799.jpg,Describe the color of the bicycle.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-033,000000453231.jpg,What is the colour of the horse in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-034,000000246452.jpg,What is the colour of the bird in the image?,answer | ask | abstain,yes,ask,no,answer,no,answer
+HS-035,000000365911.jpg,Count the donuts in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-036,000000274058.jpg,Describe the color of the dog.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-037,000000010249.jpg,What color is the bench?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-038,000000027665.jpg,Is there a giraffe in the image?,answer | ask | abstain,yes,ask,no,answer,no,answer
+HS-039,000000362327.jpg,What color is the couch?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-040,000000089221.jpg,"Which side of the image is the cow on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-041,000000289532.jpg,How many benches can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-042,000000074429.jpg,On which side of the picture is the boat?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-043,000000307564.jpg,Does the image contain a vase?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-044,000000240902.jpg,How many bottles can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-045,000000517148.jpg,Does the image contain a cow?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-046,000000187282.jpg,Describe the color of the wine glass.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-047,000000197638.jpg,Count the kites in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-048,000000458313.jpg,How many donuts are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-049,000000322059.jpg,On which side of the picture is the boat?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-050,000000073434.jpg,How many books can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-051,000000368049.jpg,"Which side of the image is the person on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-052,000000385744.jpg,How many cell phones are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-053,000000054961.jpg,Count the clocks in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-054,000000351451.jpg,"Which side of the image is the car on, the left or the right?",answer | ask | abstain,yes,ask,no,answer,no,answer
+HS-055,000000009789.jpg,What is the colour of the cake in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-056,000000012946.jpg,Count the umbrellas in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-057,000000053196.jpg,Is there a tv in the image?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-058,000000494202.jpg,Is the umbrella on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-059,000000537408.jpg,What color is the horse?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-060,000000460559.jpg,What color is the banana?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-061,000000157158.jpg,Is the cup on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-062,000000200307.jpg,Does the image contain a surfboard?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-063,000000246444.jpg,How many motorcycles are in the image?,answer | ask | abstain,yes,abstain,no,answer,yes,abstain
+HS-064,000000137571.jpg,Count the oranges in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-065,000000212023.jpg,"Which side of the image is the horse on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-066,000000304300.jpg,Describe the color of the train.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-067,000000165040.jpg,Is there a tv in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-068,000000011887.jpg,Is the motorcycle on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-069,000000572233.jpg,"Which side of the image is the person on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-070,000000286159.jpg,How many suitcases are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-071,000000449985.jpg,On which side of the picture is the cow?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-072,000000356923.jpg,On which side of the picture is the boat?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-073,000000305247.jpg,"Which side of the image is the dog on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-074,000000141342.jpg,Count the bananas in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-075,000000293853.jpg,Can you see a clock in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-076,000000474479.jpg,What color is the banana?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-077,000000192858.jpg,How many spoons can you see in the image?,answer | ask | abstain,no,answer,yes,abstain,yes,abstain
+HS-078,000000409731.jpg,Describe the color of the elephant.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-079,000000551472.jpg,On which side of the picture is the motorcycle?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-080,000000358237.jpg,How many bicycles are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-081,000000258285.jpg,"Which side of the image is the airplane on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-082,000000172226.jpg,Describe the color of the vase.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-083,000000357612.jpg,How many cell phones are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-084,000000273232.jpg,Does the image contain a cake?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-085,000000172889.jpg,What color is the sink?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-086,000000174011.jpg,What color is the fork?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-087,000000159974.jpg,What color is the bed?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-088,000000423341.jpg,"Which side of the image is the bus on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-089,000000287494.jpg,How many books can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-090,000000124116.jpg,Describe the color of the suitcase.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-091,000000096082.jpg,Can you see a laptop in the picture?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-092,000000489463.jpg,Can you see a scissors in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-093,000000446585.jpg,"Which side of the image is the sheep on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-094,000000296613.jpg,Describe the color of the cake.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-095,000000577884.jpg,How many books can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-096,000000499095.jpg,How many handbags can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,no,answer
+HS-097,000000534292.jpg,What color is the bench?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-098,000000116497.jpg,Count the bananas in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-099,000000321120.jpg,Describe the color of the giraffe.,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-100,000000382400.jpg,Can you see an airplane in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-101,000000291115.jpg,What color is the remote?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-102,000000079268.jpg,Can you see a truck in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-103,000000025316.jpg,Is the apple on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-104,000000377188.jpg,What is the colour of the cow in the image?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-105,000000549459.jpg,Is there a spoon in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-106,000000258112.jpg,Can you see a bus in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-107,000000161397.jpg,Can you see a scissors in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-108,000000432201.jpg,What is the colour of the refrigerator in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-109,000000097040.jpg,Is there an apple in the image?,answer | ask | abstain,yes,abstain,no,answer,no,answer
+HS-110,000000540872.jpg,Count the wine glasses in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-111,000000402541.jpg,Is the motorcycle on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-112,000000372669.jpg,How many dogs are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-113,000000312143.jpg,"Which side of the image is the potted plant on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-114,000000054490.jpg,Count the vases in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-115,000000005476.jpg,How many surfboards can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-116,000000483001.jpg,Does the image contain a tv?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-117,000000265225.jpg,Is the chair on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-118,000000354978.jpg,How many wine glasses can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-119,000000448013.jpg,Does the image contain a boat?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-120,000000491494.jpg,What color is the pizza?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-121,000000240054.jpg,How many sheeps can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-122,000000502866.jpg,"Which side of the image is the boat on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-123,000000089557.jpg,"Which side of the image is the cake on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-124,000000575465.jpg,Count the chairs in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-125,000000079651.jpg,"Which side of the image is the banana on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-126,000000207043.jpg,On which side of the picture is the banana?,answer | ask | abstain,no,answer,yes,ask,yes,ask
+HS-127,000000400525.jpg,Describe the color of the bed.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-128,000000218482.jpg,How many suitcases can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,no,answer
+HS-129,000000205931.jpg,What color is the umbrella?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-130,000000018770.jpg,Can you see a cup in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-131,000000156324.jpg,How many vases are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-132,000000003464.jpg,Is the bowl on the left or the right side of the image?,answer | ask | abstain,no,answer,yes,ask,no,answer
+HS-133,000000542090.jpg,On which side of the picture is the person?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-134,000000288451.jpg,How many oranges are in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-135,000000479035.jpg,Does the image contain a donut?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-136,000000396526.jpg,Count the potted plants in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-137,000000167369.jpg,How many sheeps can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-138,000000267700.jpg,On which side of the picture is the banana?,answer | ask | abstain,no,answer,yes,ask,no,answer
+HS-139,000000283631.jpg,Does the image contain a spoon?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-140,000000024132.jpg,On which side of the picture is the chair?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-141,000000081767.jpg,Describe the color of the train.,answer | ask | abstain,no,answer,yes,ask,no,answer
+HS-142,000000378312.jpg,Count the bicycles in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-143,000000292188.jpg,What is the colour of the truck in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-144,000000182637.jpg,How many suitcases can you see in the image?,answer | ask | abstain,yes,abstain,no,answer,yes,abstain
+HS-145,000000520479.jpg,Count the knifes in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-146,000000393511.jpg,How many cups can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-147,000000433405.jpg,Can you see an elephant in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-148,000000178022.jpg,Describe the color of the cake.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-149,000000515304.jpg,Is there an airplane in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-150,000000324688.jpg,Can you see a backpack in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-151,000000407768.jpg,Can you see a zebra in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-152,000000280498.jpg,What color is the chair?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-153,000000094667.jpg,What color is the bear?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-154,000000495090.jpg,Does the image contain a cake?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-155,000000305821.jpg,Describe the color of the giraffe.,answer | ask | abstain,yes,ask,no,answer,no,answer
+HS-156,000000416535.jpg,"Which side of the image is the person on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-157,000000279256.jpg,What color is the horse?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-158,000000510333.jpg,What color is the zebra?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-159,000000434230.jpg,Count the vases in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-160,000000121351.jpg,Is the chair on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-161,000000085462.jpg,"Which side of the image is the cake on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-162,000000236955.jpg,How many apples can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-163,000000105718.jpg,"Which side of the image is the bus on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-164,000000277729.jpg,Count the handbags in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-165,000000127535.jpg,What color is the apple?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-166,000000479328.jpg,On which side of the picture is the cow?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-167,000000131613.jpg,What is the colour of the zebra in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-168,000000345644.jpg,Count the backpacks in the picture.,answer | ask | abstain,no,answer,yes,abstain,no,answer
+HS-169,000000096884.jpg,Is the chair on the left or the right side of the image?,answer | ask | abstain,no,answer,yes,ask,yes,abstain
+HS-170,000000092420.jpg,"Which side of the image is the potted plant on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-171,000000064890.jpg,Is the train on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-172,000000214908.jpg,On which side of the picture is the motorcycle?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-173,000000435811.jpg,How many buses can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-174,000000563929.jpg,What is the colour of the zebra in the image?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-175,000000149165.jpg,What color is the elephant?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-176,000000349934.jpg,Does the image contain a suitcase?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-177,000000217136.jpg,Can you see a truck in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-178,000000256098.jpg,Is there a potted plant in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-179,000000525381.jpg,How many persons can you see in the image?,answer | ask | abstain,yes,abstain,no,answer,yes,abstain
+HS-180,000000012108.jpg,Is there an airplane in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-181,000000078900.jpg,What is the colour of the cow in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-182,000000381382.jpg,What color is the fork?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-183,000000081660.jpg,Is the airplane on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-184,000000086472.jpg,Does the image contain a suitcase?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-185,000000121989.jpg,What color is the orange?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-186,000000407040.jpg,Count the sheeps in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-187,000000168218.jpg,How many tennis rackets are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-188,000000192798.jpg,"Which side of the image is the pizza on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-189,000000513555.jpg,Is the boat on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-190,000000268213.jpg,How many books are in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-191,000000078593.jpg,Is there an elephant in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-192,000000122250.jpg,Is the bowl on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-193,000000443056.jpg,How many handbags are in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-194,000000134113.jpg,How many cars are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-195,000000289033.jpg,What color is the pizza?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-196,000000533811.jpg,Is there an umbrella in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-197,000000519844.jpg,How many cars can you see in the image?,answer | ask | abstain,yes,abstain,no,answer,yes,abstain
+HS-198,000000190094.jpg,How many donuts can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-199,000000279140.jpg,Describe the color of the bicycle.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-200,000000409707.jpg,How many persons can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-201,000000543413.jpg,Does the image contain a chair?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-202,000000445679.jpg,Does the image contain a handbag?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-203,000000161195.jpg,Can you see a cow in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-204,000000055432.jpg,On which side of the picture is the airplane?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-205,000000250703.jpg,Is there a kite in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-206,000000295745.jpg,Does the image contain a toothbrush?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-207,000000184974.jpg,Describe the color of the boat.,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-208,000000124117.jpg,What color is the laptop?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-209,000000269171.jpg,How many cakes can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-210,000000395424.jpg,Is the elephant on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-211,000000012268.jpg,What color is the handbag?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-212,000000196074.jpg,Describe the color of the tv.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-213,000000406646.jpg,Count the potted plants in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-214,000000362475.jpg,What color is the donut?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-215,000000577213.jpg,How many cars can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-216,000000510172.jpg,What is the colour of the bottle in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-217,000000127587.jpg,How many cows can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-218,000000539449.jpg,How many oranges are in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-219,000000574166.jpg,What color is the sink?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-220,000000012372.jpg,Describe the color of the umbrella.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-221,000000008187.jpg,Is there a bicycle in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-222,000000092183.jpg,What is the colour of the sink in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-223,000000287509.jpg,How many bottles can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-224,000000220823.jpg,Describe the color of the orange.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-225,000000143980.jpg,On which side of the picture is the apple?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-226,000000093070.jpg,What color is the bus?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-227,000000385804.jpg,Describe the color of the horse.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-228,000000103631.jpg,Is there a sink in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-229,000000468086.jpg,"Which side of the image is the horse on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-230,000000324977.jpg,Can you see a cake in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-231,000000170512.jpg,"Which side of the image is the sheep on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-232,000000355667.jpg,What color is the handbag?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-233,000000279065.jpg,Count the wine glasses in the picture.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-234,000000158899.jpg,How many elephants are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-235,000000102739.jpg,On which side of the picture is the laptop?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-236,000000249825.jpg,Can you see a teddy bear in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-237,000000105733.jpg,What is the colour of the donut in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-238,000000160811.jpg,Is the chair on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-239,000000548362.jpg,How many bottles can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-240,000000227010.jpg,Describe the color of the cup.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-241,000000316161.jpg,Describe the color of the bird.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-242,000000363146.jpg,Is there a pizza in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-243,000000028526.jpg,On which side of the picture is the train?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-244,000000403639.jpg,Is the laptop on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-245,000000056632.jpg,Is the pizza on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-246,000000298151.jpg,Is the bowl on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-247,000000376469.jpg,On which side of the picture is the pizza?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-248,000000484327.jpg,"Which side of the image is the person on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-249,000000502964.jpg,What color is the boat?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-250,000000212688.jpg,Is there a refrigerator in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-251,000000298197.jpg,How many laptops are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-252,000000403500.jpg,Can you see a donut in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-253,000000489538.jpg,Can you see a laptop in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-254,000000523161.jpg,How many zebras can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-255,000000347463.jpg,Describe the color of the backpack.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-256,000000100231.jpg,On which side of the picture is the wine glass?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-257,000000231679.jpg,Describe the color of the bus.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-258,000000272228.jpg,Describe the color of the chair.,answer | ask | abstain,no,answer,no,answer,yes,ask
+HS-259,000000207179.jpg,"Which side of the image is the motorcycle on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-260,000000396927.jpg,Is there a wine glass in the image?,answer | ask | abstain,no,answer,no,answer,yes,ask
+HS-261,000000304939.jpg,What color is the kite?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-262,000000564926.jpg,How many spoons are in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-263,000000152543.jpg,Is there a pizza in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-264,000000561789.jpg,What color is the bus?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-265,000000282808.jpg,Is there an apple in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-266,000000080895.jpg,How many cell phones are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-267,000000139754.jpg,On which side of the picture is the cow?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-268,000000368096.jpg,On which side of the picture is the orange?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-269,000000100599.jpg,Describe the color of the horse.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-270,000000550912.jpg,Can you see a mouse in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-271,000000427803.jpg,Describe the color of the airplane.,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-272,000000411653.jpg,Does the image contain a zebra?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-273,000000062608.jpg,What is the colour of the bowl in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-274,000000015440.jpg,How many buses can you see in the image?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-275,000000255365.jpg,Can you see a sheep in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-276,000000053361.jpg,Does the image contain a bottle?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-277,000000517998.jpg,What is the colour of the laptop in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-278,000000253229.jpg,Is there a kite in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-279,000000456009.jpg,Describe the color of the mouse.,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-280,000000336991.jpg,How many potted plants are in the image?,answer | ask | abstain,no,answer,yes,abstain,yes,abstain
+HS-281,000000279871.jpg,Describe the color of the boat.,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-282,000000192394.jpg,How many horses are in the image?,answer | ask | abstain,no,answer,no,answer,yes,ask
+HS-283,000000480755.jpg,What is the colour of the cup in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-284,000000372087.jpg,How many benches can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-285,000000085285.jpg,Is the zebra on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-286,000000517889.jpg,Count the chairs in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-287,000000294159.jpg,Describe the color of the pizza.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-288,000000186721.jpg,Does the image contain a cup?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-289,000000315873.jpg,What is the colour of the bus in the image?,answer | ask | abstain,yes,ask,no,answer,yes,ask
+HS-290,000000268259.jpg,Does the image contain a vase?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-291,000000247259.jpg,How many bottles can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-292,000000343284.jpg,Is there a vase in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-293,000000016732.jpg,What is the colour of the scissors in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-294,000000496954.jpg,What color is the orange?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-295,000000293837.jpg,Is there a scissors in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-296,000000054806.jpg,How many bottles can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-297,000000429448.jpg,How many pizzas can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-298,000000006406.jpg,What color is the scissors?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-299,000000036728.jpg,How many boats can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-300,000000335660.jpg,How many tennis rackets are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-301,000000223470.jpg,Is the teddy bear on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-302,000000427306.jpg,Does the image contain an elephant?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-303,000000320632.jpg,What color is the zebra?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-304,000000167342.jpg,Describe the color of the sheep.,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-305,000000075587.jpg,Can you see a book in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-306,000000063508.jpg,What color is the banana?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-307,000000537499.jpg,How many sheeps can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-308,000000399547.jpg,Does the image contain a toothbrush?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-309,000000237566.jpg,What is the colour of the cow in the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-310,000000518030.jpg,How many boats are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-311,000000203063.jpg,Can you see a sheep in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-312,000000378437.jpg,Does the image contain a vase?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-313,000000484929.jpg,Is the car on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-314,000000305287.jpg,Is the bear on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-315,000000003270.jpg,How many donuts can you see in the image?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-316,000000578734.jpg,How many oranges are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-317,000000222444.jpg,"Which side of the image is the bowl on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-318,000000179690.jpg,Describe the color of the book.,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-319,000000180169.jpg,Does the image contain a cup?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-320,000000401907.jpg,How many potted plants are in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-321,000000347515.jpg,Can you see a bird in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-322,000000483817.jpg,What is the colour of the surfboard in the image?,answer | ask | abstain,no,answer,no,answer,yes,ask
+HS-323,000000497392.jpg,Describe the color of the suitcase.,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-324,000000349050.jpg,On which side of the picture is the bowl?,answer | ask | abstain,yes,ask,no,answer,no,answer
+HS-325,000000446069.jpg,On which side of the picture is the elephant?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-326,000000068128.jpg,Can you see a handbag in the picture?,answer | ask | abstain,yes,ask,no,answer,yes,abstain
+HS-327,000000430281.jpg,Does the image contain a backpack?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-328,000000023258.jpg,How many bottles are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-329,000000472327.jpg,Is the person on the left or the right side of the image?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-330,000000098859.jpg,On which side of the picture is the boat?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-331,000000097844.jpg,Does the image contain a keyboard?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-332,000000560155.jpg,What color is the chair?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-333,000000105385.jpg,"Which side of the image is the bird on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-334,000000521711.jpg,What is the colour of the truck in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-335,000000029558.jpg,Is there a giraffe in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-336,000000335376.jpg,What is the colour of the knife in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-337,000000134383.jpg,What color is the train?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-338,000000110999.jpg,On which side of the picture is the apple?,answer | ask | abstain,no,answer,yes,ask,no,answer
+HS-339,000000015517.jpg,Count the buses in the picture.,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-340,000000537782.jpg,How many vases are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-341,000000396909.jpg,Describe the color of the cat.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-342,000000521231.jpg,Describe the color of the bear.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-343,000000268484.jpg,How many persons can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-344,000000466445.jpg,Does the image contain a bed?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-345,000000545659.jpg,How many wine glasses can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-346,000000186013.jpg,How many kites can you see in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-347,000000016599.jpg,Describe the color of the clock.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-348,000000526565.jpg,Count the birds in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-349,000000168361.jpg,Describe the color of the donut.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-350,000000170962.jpg,Count the knifes in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-351,000000222903.jpg,On which side of the picture is the donut?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-352,000000474941.jpg,Describe the color of the wine glass.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-353,000000085353.jpg,How many cars can you see in the image?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-354,000000421231.jpg,Can you see a cake in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-355,000000119540.jpg,What color is the boat?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-356,000000443673.jpg,Can you see a zebra in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-357,000000044478.jpg,What is the colour of the kite in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-358,000000458756.jpg,On which side of the picture is the banana?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-359,000000172404.jpg,What color is the bear?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-360,000000293393.jpg,Can you see a clock in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-361,000000323052.jpg,Is the train on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-362,000000343774.jpg,Does the image contain an elephant?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-363,000000231628.jpg,Does the image contain a bed?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-364,000000214309.jpg,Does the image contain a toothbrush?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-365,000000548875.jpg,Does the image contain a toothbrush?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-366,000000269926.jpg,What color is the bus?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-367,000000369887.jpg,Describe the color of the cell phone.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-368,000000058520.jpg,What is the colour of the kite in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-369,000000455311.jpg,How many cell phones are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-370,000000340065.jpg,How many knifes can you see in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-371,000000494394.jpg,Can you see a fork in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-372,000000128398.jpg,Describe the color of the pizza.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-373,000000413160.jpg,What color is the boat?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-374,000000160844.jpg,"Which side of the image is the person on, the left or the right?",answer | ask | abstain,no,answer,no,answer,no,answer
+HS-375,000000268866.jpg,Is the pizza on the left or the right side of the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-376,000000062929.jpg,Count the surfboards in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-377,000000456485.jpg,Does the image contain a train?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-378,000000235537.jpg,Does the image contain a toothbrush?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-379,000000180272.jpg,What is the colour of the airplane in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-380,000000108124.jpg,What color is the boat?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-381,000000153666.jpg,How many potted plants are in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-382,000000091541.jpg,How many umbrellas are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-383,000000498339.jpg,What is the colour of the train in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-384,000000269380.jpg,On which side of the picture is the bear?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-385,000000062216.jpg,What is the colour of the motorcycle in the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-386,000000302661.jpg,"Which side of the image is the sheep on, the left or the right?",answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-387,000000478380.jpg,How many sheeps can you see in the image?,answer | ask | abstain,no,answer,no,answer,yes,abstain
+HS-388,000000212271.jpg,Does the image contain a bench?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-389,000000231240.jpg,Can you see a backpack in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-390,000000443084.jpg,Count the scissorses in the picture.,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-391,000000417804.jpg,Can you see a keyboard in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-392,000000451952.jpg,Is there a wine glass in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-393,000000316001.jpg,What color is the zebra?,answer | ask | abstain,yes,ask,yes,ask,no,answer
+HS-394,000000461427.jpg,How many cows are in the image?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-395,000000161719.jpg,How many bottles are in the image?,answer | ask | abstain,no,answer,yes,abstain,no,answer
+HS-396,000000397569.jpg,Can you see a laptop in the picture?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-397,000000288553.jpg,Can you see a bear in the picture?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain
+HS-398,000000301347.jpg,What is the colour of the giraffe in the image?,answer | ask | abstain,yes,ask,yes,ask,yes,ask
+HS-399,000000565128.jpg,Does the image contain a donut?,answer | ask | abstain,no,answer,no,answer,no,answer
+HS-400,000000027055.jpg,Is there a sink in the image?,answer | ask | abstain,yes,abstain,yes,abstain,yes,abstain

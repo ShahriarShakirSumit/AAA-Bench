@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AAA-Bench item",
+  "description": "One line of data/{train,val,test}.jsonl.",
+  "type": "object",
+  "required": [
+    "item_id",
+    "split",
+    "image_id",
+    "image_source",
+    "image_path",
+    "question",
+    "ambiguity_subtype",
+    "coco_category_ids",
+    "num_objects_in_scene",
+    "pair_role",
+    "decision_basis",
+    "visual_evidence",
+    "is_ambiguous",
+    "ambiguity_type",
+    "difficulty",
+    "gold_action",
+    "direct_answer",
+    "valid_interpretations",
+    "clarifications",
+    "pair_id"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "description": "Unique item id, e.g. AAAv2-004578."
+    },
+    "split": {
+      "enum": [
+        "train",
+        "val",
+        "test"
+      ],
+      "description": "Splits are pair-level and image-disjoint."
+    },
+    "image_id": {
+      "type": "string",
+      "description": "COCO 2017 image id."
+    },
+    "image_source": {
+      "const": "coco"
+    },
+    "image_path": {
+      "type": "string",
+      "description": "Path of the image inside a COCO 2017 folder, e.g. train2017/000000384993.jpg."
+    },
+    "question": {
+      "type": "string",
+      "description": "The question. Both members of a pair have exactly the same question."
+    },
+    "ambiguity_subtype": {
+      "enum": [
+        "referential_spatial",
+        "referential_color",
+        "counting",
+        "presence"
+      ],
+      "description": "Question family."
+    },
+    "coco_category_ids": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "maxItems": 1,
+      "description": "The COCO category the question asks about."
+    },
+    "num_objects_in_scene": {
+      "type": "integer",
+      "description": "Number of COCO instance annotations in the image, over all categories."
+    },
+    "pair_role": {
+      "enum": [
+        "answer",
+        "ask",
+        "abstain"
+      ],
+      "description": "Equal to gold_action."
+    },
+    "decision_basis": {
+      "enum": [
+        "single_clear",
+        "multi_dominant",
+        "multi_comparable",
+        "distinct",
+        "crowd",
+        "present",
+        "absent"
+      ],
+      "description": "The scene configuration that determines the gold action (see aaa_bench/construction.py)."
+    },
+    "visual_evidence": {
+      "type": "object",
+      "description": "The annotations behind the label. Referents are the non-crowd instances of the category covering at least 1.5% of the image, largest first.",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "COCO category name."
+        },
+        "instance_count": {
+          "type": "integer",
+          "description": "Number of referents. Crowd and present items without a referent count every instance of the category instead, crowd annotations included."
+        },
+        "areas": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "Pixel areas of up to four largest referents."
+        },
+        "boxes": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "description": "Their boxes as [x, y, width, height] in pixels (COCO format)."
+        }
+      }
+    },
+    "is_ambiguous": {
+      "type": "boolean",
+      "description": "True when gold_action is ask or abstain."
+    },
+    "ambiguity_type": {
+      "enum": [
+        "referential",
+        "resolution",
+        null
+      ],
+      "description": "referential for ask items, resolution for crowd items, null otherwise (absent-object items included)."
+    },
+    "difficulty": {
+      "enum": [
+        1,
+        2,
+        3
+      ],
+      "description": "Set by the construction: 1 for one clear referent, present, absent and countable items, 2 for one dominant referent, 3 for ask and crowd items. Not a measured difficulty."
+    },
+    "gold_action": {
+      "enum": [
+        "answer",
+        "ask",
+        "abstain"
+      ],
+      "description": "The action the scene licenses."
+    },
+    "direct_answer": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The answer COCO fixes, where it fixes one: the side of the referent (left, center or right) for spatial answer items and yes for present objects. Null for every other item, including colour questions (COCO has no colour labels) and countable items. No metric uses it."
+    },
+    "valid_interpretations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "interpretation": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          },
+          "probability": {
+            "type": "number"
+          }
+        }
+      },
+      "description": "Ask items: one entry per referent, named by its side of the image (two referents can share a side), with answer 'referent k' and uniform probability. Answer items: one entry whose answer equals direct_answer. Abstain items for crowds: empty. Absent-object items: one entry with a null answer."
+    },
+    "clarifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "clarifying_question": {
+            "type": "string"
+          },
+          "clarification_response": {
+            "type": "string"
+          },
+          "disambiguated_answer": {
+            "type": "string"
+          },
+          "interpretation_id": {
+            "type": "integer"
+          }
+        }
+      },
+      "description": "Ask items: the clarification given to a model that asks (turn 1.5 of the protocol). Empty otherwise."
+    },
+    "pair_id": {
+      "type": "string",
+      "description": "Id of the counterfactual pair; each pair has exactly two items with different gold actions."
+    }
+  }
+}

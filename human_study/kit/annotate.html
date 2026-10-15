@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAA-Bench — Human Check</title>
+<style>
+  :root{
+    --bg:#0f1216; --panel:#171b21; --edge:#2a313b; --ink:#e8ecf1; --mut:#9aa4b2;
+    --answer:#1f9d55; --ask:#2b6cb0; --abstain:#c05621; --accent:#6aa9ff;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f4f6f9; --panel:#ffffff; --edge:#dde3ea; --ink:#1a2230; --mut:#5c6673; --accent:#2b6cb0; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+  header{display:flex;align-items:center;gap:14px;padding:10px 16px;border-bottom:1px solid var(--edge);
+    position:sticky;top:0;background:var(--bg);z-index:5;flex-wrap:wrap}
+  header b{font-size:15px}
+  #name{padding:6px 10px;border:1px solid var(--edge);border-radius:8px;background:var(--panel);color:var(--ink);width:180px}
+  .grow{flex:1}
+  #bar{height:6px;background:var(--edge);border-radius:99px;overflow:hidden;flex-basis:100%;margin-top:4px}
+  #fill{height:100%;width:0;background:var(--accent);transition:width .2s}
+  .count{color:var(--mut);font-variant-numeric:tabular-nums;white-space:nowrap}
+  main{max-width:900px;margin:0 auto;padding:18px 16px 120px}
+  .imgwrap{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:10px;text-align:center;min-height:340px;
+    display:flex;align-items:center;justify-content:center}
+  .imgwrap img{max-width:100%;max-height:64vh;border-radius:8px}
+  .q{font-size:20px;font-weight:600;margin:18px 4px 4px;text-align:center}
+  .hint{color:var(--mut);text-align:center;margin-bottom:14px;font-size:13px}
+  .opts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .opt{border:2px solid var(--edge);background:var(--panel);color:var(--ink);border-radius:12px;padding:16px 10px;cursor:pointer;
+    text-align:center;font-size:16px;font-weight:600;transition:transform .05s,border-color .1s}
+  .opt:hover{transform:translateY(-1px)}
+  .opt small{display:block;font-weight:400;color:var(--mut);font-size:12px;margin-top:4px}
+  .opt .k{display:inline-block;border:1px solid var(--edge);border-radius:6px;padding:0 6px;font-size:12px;color:var(--mut);margin-bottom:6px}
+  .opt.answer.sel{border-color:var(--answer);box-shadow:0 0 0 3px color-mix(in srgb,var(--answer) 25%,transparent)}
+  .opt.ask.sel{border-color:var(--ask);box-shadow:0 0 0 3px color-mix(in srgb,var(--ask) 25%,transparent)}
+  .opt.abstain.sel{border-color:var(--abstain);box-shadow:0 0 0 3px color-mix(in srgb,var(--abstain) 25%,transparent)}
+  footer{position:fixed;bottom:0;left:0;right:0;background:var(--bg);border-top:1px solid var(--edge);
+    padding:10px 16px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
+  button.nav{padding:9px 16px;border:1px solid var(--edge);background:var(--panel);color:var(--ink);border-radius:8px;cursor:pointer;font-size:14px}
+  button.nav:disabled{opacity:.4;cursor:default}
+  #done{background:var(--answer);color:#fff;border-color:var(--answer);font-weight:600}
+  #done:disabled{background:var(--edge);color:var(--mut);border-color:var(--edge)}
+  .pill{font-size:12px;color:var(--mut)}
+  a.help{color:var(--accent);text-decoration:none;font-size:13px}
+  #tip{max-width:900px;margin:0 auto;padding:0 16px}
+  details{background:var(--panel);border:1px solid var(--edge);border-radius:10px;padding:8px 12px;margin-top:12px}
+  summary{cursor:pointer;color:var(--accent)}
+  details ul{margin:8px 0 2px;padding-left:18px;color:var(--mut)}
+</style>
+</head>
+<body>
+<header>
+  <b>AAA-Bench · human check</b>
+  <input id="name" placeholder="your first name" autocomplete="off">
+  <span class="grow"></span>
+  <span class="count"><span id="pos">0</span> / <span id="tot">0</span> &nbsp;·&nbsp; <span id="doneCount">0</span> labelled</span>
+  <span class="pill" id="saved">saved ✓</span>
+  <div id="bar"><div id="fill"></div></div>
+</header>
+
+<main>
+  <div class="imgwrap"><img id="img" alt="loading…"></div>
+  <div class="q" id="q">—</div>
+  <div class="hint">What should an AI assistant do with this question about this image?</div>
+  <div class="opts">
+    <div class="opt answer"  data-a="answer"><span class="k">1</span>ANSWER<small>one clear answer — just answer</small></div>
+    <div class="opt ask"     data-a="ask"><span class="k">2</span>ASK<small>ambiguous — ask which one</small></div>
+    <div class="opt abstain" data-a="abstain"><span class="k">3</span>ABSTAIN<small>can't be answered — decline</small></div>
+  </div>
+  <details>
+    <summary>Quick rules (30-second read)</summary>
+    <ul>
+      <li><b>answer</b> — exactly one obvious thing matches, or one clearly dominates the frame.</li>
+      <li><b>ask</b> — two or more <i>equally prominent</i> things could be "the X" → ask which.</li>
+      <li><b>abstain</b> — the relevant thing is tiny / cut off / an uncountable crowd → can't tell, decline.</li>
+      <li>Keys: <b>1</b>=answer, <b>2</b>=ask, <b>3</b>=abstain, <b>←/→</b> to move. Your progress saves automatically.</li>
+    </ul>
+  </details>
+</main>
+
+<footer>
+  <button class="nav" id="prev">← Prev</button>
+  <button class="nav" id="next">Next →</button>
+  <button class="nav" id="jump">Go to first unlabelled</button>
+  <button class="nav" id="done" disabled>Download my answers</button>
+</footer>
+
+<script src="items.js"></script>
+<script>
+const KEY = () => "aaa_annot_" + (document.getElementById("name").value.trim().toLowerCase() || "anon");
+let i = 0, labels = {};
+const $ = id => document.getElementById(id);
+
+function load(){ try{ labels = JSON.parse(localStorage.getItem(KEY())) || {}; }catch(e){ labels = {}; } }
+function save(){ localStorage.setItem(KEY(), JSON.stringify(labels)); flash(); render(); }
+let ft; function flash(){ $("saved").style.opacity=1; clearTimeout(ft); ft=setTimeout(()=>$("saved").style.opacity=.35,900); }
+
+function render(){
+  const it = ITEMS[i];
+  $("img").src = "images/" + it.image;
+  $("img").alt = it.image;
+  $("q").textContent = "“" + it.question + "”";
+  $("pos").textContent = i+1; $("tot").textContent = ITEMS.length;
+  const n = Object.keys(labels).length;
+  $("doneCount").textContent = n;
+  $("fill").style.width = (100*n/ITEMS.length) + "%";
+  document.querySelectorAll(".opt").forEach(o=>o.classList.toggle("sel", labels[it.id]===o.dataset.a));
+  $("prev").disabled = i===0; $("next").disabled = i===ITEMS.length-1;
+  $("done").disabled = n < ITEMS.length;
+  $("done").textContent = n < ITEMS.length ? `Download (${ITEMS.length-n} left)` : "Download my answers ✓";
+}
+function pick(a){ labels[ITEMS[i].id]=a; save(); if(i<ITEMS.length-1){ i++; } render(); }
+function go(d){ i=Math.max(0,Math.min(ITEMS.length-1,i+d)); render(); }
+function firstUnlabelled(){ const k=ITEMS.findIndex(it=>!labels[it.id]); if(k>=0){i=k;render();} }
+
+document.querySelectorAll(".opt").forEach(o=>o.onclick=()=>pick(o.dataset.a));
+$("prev").onclick=()=>go(-1); $("next").onclick=()=>go(1); $("jump").onclick=firstUnlabelled;
+$("name").oninput=()=>{ load(); i=0; render(); };
+document.onkeydown=e=>{
+  if(e.target.tagName==="INPUT") return;
+  if(e.key==="1")pick("answer"); else if(e.key==="2")pick("ask"); else if(e.key==="3")pick("abstain");
+  else if(e.key==="ArrowRight")go(1); else if(e.key==="ArrowLeft")go(-1);
+};
+$("done").onclick=()=>{
+  const name=$("name").value.trim()||"anon";
+  let csv="item_id,action,ambiguous\n";
+  for(const it of ITEMS){ const a=labels[it.id]||""; const amb=a==="answer"?"no":(a?"yes":""); csv+=`${it.id},${a},${amb}\n`; }
+  const blob=new Blob([csv],{type:"text/csv"});
+  const url=URL.createObjectURL(blob); const link=document.createElement("a");
+  link.href=url; link.download=`aaa_labels_${name.toLowerCase()}.csv`; link.click(); URL.revokeObjectURL(url);
+};
+load(); render();
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lc}
+\toprule
+Policy & Contrastive acc. \\
+\midrule
+Always \ans{} & 0.000 \\
+Always \ask{} & 0.000 \\
+Always \abs{} & 0.000 \\
+Uniform random (3 actions) & 0.111$\pm$0.023 \\
+\textbf{Text-only random} (knows family) & 0.251$\pm$0.029 \\
+Text-only prior (family $+$ marginal) & 0.251$\pm$0.034 \\
+\emph{Best VLM} (qwen2.5-vl-7b) & 0.167 \\
+\textbf{Detector $+$ rules} & 0.742 \\
+\emph{Human majority} (50 pairs) & 0.560$\pm$0.140 \\
+\bottomrule
+\end{tabular}
