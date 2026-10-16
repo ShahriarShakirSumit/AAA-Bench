@@ -4,8 +4,10 @@ Each row is one question asked about two images whose gold actions differ. For e
 with the shortest question in a category not used yet is shown. The spatial row uses a count-matched
 pair (one dominant instance against several comparable ones), and its ASK image must have its two
 largest instances clearly on opposite sides (box centres below 0.35 and above 0.65 of the image
-width), so the two readings of the question give different answers. Needs the COCO images
-(tools/fetch_images.py) and Pillow.
+width), so the two readings of the question give different answers. The counting row shows pair
+P004558: two teddy bears against a large pile of them that COCO annotates as a crowd. A crowd image is
+labelled without an instance count, because the count stored for it does not include the objects
+inside the crowd region. Needs the COCO images (tools/fetch_images.py) and Pillow.
 
     python reproduce/make_examples.py --coco-dir coco
 """
@@ -30,6 +32,7 @@ BASIS_TEXT = {"single_clear": "one clear instance", "multi_dominant": "several, 
               "crowd": "uncountable crowd", "present": "category present", "absent": "category absent"}
 WANT = [("referential_spatial", ("answer", "ask")), ("counting", ("answer", "abstain")),
         ("presence", ("answer", "abstain"))]
+COUNTING_PAIR = "P004558"
 
 
 def crop(path):
@@ -56,6 +59,8 @@ def pick_rows(coco_dir):
             if pair[0]["ambiguity_subtype"] != family or {x["gold_action"] for x in pair} != set(order):
                 continue
             if not all((Path(coco_dir) / x["image_path"]).exists() for x in pair):
+                continue
+            if family == "counting" and pair[0]["pair_id"] != COUNTING_PAIR:
                 continue
             if family == "referential_spatial":
                 ask = next(x for x in pair if x["gold_action"] == "ask")
@@ -99,7 +104,8 @@ def main():
                     va="top", ha="left", zorder=6,
                     bbox=dict(boxstyle="round,pad=0.30", facecolor=colour, edgecolor="none"))
             ev = m["visual_evidence"]
-            ax.set_xlabel(f"{ev['category']} ×{ev['instance_count']}: {BASIS_TEXT[m['decision_basis']]}",
+            count = "" if m["decision_basis"] == "crowd" else f" ×{ev['instance_count']}"
+            ax.set_xlabel(f"{ev['category']}{count}: {BASIS_TEXT[m['decision_basis']]}",
                           fontsize=5.4, labelpad=1.6)
         bl, br = row_axes[0].get_position(), row_axes[1].get_position()
         fig.text((bl.x0 + br.x1) / 2, bl.y1 + 0.006,
