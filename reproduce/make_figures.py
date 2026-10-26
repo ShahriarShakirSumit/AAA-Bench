@@ -132,7 +132,7 @@ def fig_cot(gold, out):
     ax.invert_yaxis()
     ax.set_xlabel("perception: no-CoT $\\rightarrow$ CoT")
     ax.set_xlim(-.02, 1.02)
-    ax.set_title("chain-of-thought moves perception the wrong way", fontsize=8, pad=4)
+    ax.set_title("chain-of-thought moves perception the wrong way", fontsize=8, pad=4, loc="right")
     fig.tight_layout(pad=.4)
     for e in ("pdf", "png"):
         fig.savefig(out / f"cot_effect.{e}", dpi=200)
